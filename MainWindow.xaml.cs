@@ -23,6 +23,17 @@ namespace Calculator
         public MainWindow()
         {
             InitializeComponent();
+            resultLabel.Content = "12";
+        }
+
+        /// <summary>
+        ///     Cleans the label and sets value of the label to "0"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void acButton_Click(object sender, RoutedEventArgs e)
+        {
+            resultLabel.Content = "0";
         }
     }
 }
