@@ -11,5 +11,5 @@
   <ItemGroup>
     <Content Include="calculatorIcon.ico" />
   </ItemGroup>
-
+	
 </Project>
