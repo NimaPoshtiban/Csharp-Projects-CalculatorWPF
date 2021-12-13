@@ -25,19 +25,25 @@ namespace Calculator
         private void AcButton_Click(object sender, RoutedEventArgs e)
         {
             resultLabel.Content = "0";
+            result = 0;
+            lastNumber = 0;
         }
 
         /// <summary>
-        /// divides the number by 100
+        /// divides the number by 100 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void ModButton_Click(object sender, RoutedEventArgs e)
         {
-            if (double.TryParse(resultLabel.Content.ToString(), out lastNumber))
+            if (double.TryParse(resultLabel.Content.ToString(), out double tempNumber))
             {
-                lastNumber /= 100;
-                resultLabel.Content = lastNumber.ToString();
+                tempNumber /= 100;
+                if (tempNumber != 0)
+                {
+                    tempNumber *= lastNumber;
+                }
+                resultLabel.Content = tempNumber.ToString();
             }
         }
         /// <summary>
