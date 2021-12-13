@@ -26,21 +26,21 @@
             Grid.Row="1"
             Content="AC"
             Margin="5"
-            Click="acButton_Click"
+            Click="AcButton_Click"
             />
         <Button
             Grid.Row="1"
             Grid.Column="1"
             Margin="5"
-            Content="+/1"
-            x:Name="minplusButton"
+            Content="+/-"
+            x:Name="minplusButton" Click="MinplusButton_Click"
             />
         <Button
             Margin="5"
             Content="%"
             Grid.Row="1"
             Grid.Column="2"
-            x:Name="modButton"
+            x:Name="modButton" Click="ModButton_Click"
             />
         <Button
             Margin="5"
@@ -48,12 +48,14 @@
             Grid.Row="1"
             Grid.Column="3"
             x:Name="divButton"
+            Click="OperationButton_Click"
             />
         <Button
             Margin="5"
             Content="1"
             Grid.Row="2"
             x:Name="oneButton"
+            Click="NumberButton_Click"
             />
         <Button
             Margin="5"
@@ -61,35 +63,41 @@
             Grid.Row="2"
             Grid.Column="1"
             x:Name="twoButton"
+            Click="NumberButton_Click"
             />
         <Button x:Name="threeButton"
             Margin="5"
             Content="3"
             Grid.Row="2"
             Grid.Column="2"
+            Click="NumberButton_Click"
             />
         <Button x:Name="multipleButton"
             Margin="5"
             Content="*"
             Grid.Row="2"
             Grid.Column="3"
+            Click="OperationButton_Click"
             />
         <Button x:Name="fourButton"
             Margin="5"
             Content="4"
             Grid.Row="3"
+            Click="NumberButton_Click"
             />
         <Button x:Name="fiveButton"
             Margin="5"
             Content="5"
             Grid.Row="3"
             Grid.Column="1"
+            Click="NumberButton_Click"
             />
         <Button x:Name="sixButton"
             Margin="5"
             Content="6"
             Grid.Row="3"
             Grid.Column="2"
+            Click="NumberButton_Click"
             />
         <Button x:Name="minusButton"
             Margin="5"
@@ -101,42 +109,48 @@
             Margin="5"
             Content="7"
             Grid.Row="4"
+            Click="NumberButton_Click"
             />
         <Button x:Name="eightButton"
             Margin="5"
             Content="8"
             Grid.Row="4"
             Grid.Column="1"
+            Click="NumberButton_Click"
             />
         <Button x:Name="nineButton"
             Margin="5"
             Content="9"
             Grid.Row="4"
             Grid.Column="2"
+            Click="NumberButton_Click"
             />
         <Button x:Name="plusButton"
             Margin="5"
             Content="+"
             Grid.Row="4"
             Grid.Column="3"
+            Click="OperationButton_Click"
             />
         <Button x:Name="zeroButton"
             Margin="5"
             Content="0"
             Grid.Row="5"
             Grid.ColumnSpan="2"
+            Click="NumberButton_Click"
             />
         <Button x:Name="fpButton"
             Margin="5"
             Content="."
             Grid.Row="5"
             Grid.Column="2"
+                Click="FpButton_Click"
             />
         <Button x:Name="calculateButton"
             Margin="5"
             Content="="
             Grid.Row="5"
-            Grid.Column="3"
+            Grid.Column="3" Click="CalculateButton_Click"
             />
     </Grid>
 </Window>
