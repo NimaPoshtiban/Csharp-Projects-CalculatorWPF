@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Calculator
 {
@@ -51,16 +39,6 @@ namespace Calculator
                 lastNumber /= 100;
                 resultLabel.Content = lastNumber.ToString();
             }
-
-            if (sender == multipleButton)
-                selectedOperator = SelectedOperator.Multiplication;
-            if (sender == divButton)
-                selectedOperator = SelectedOperator.Division;
-            if (sender == plusButton)
-                selectedOperator = SelectedOperator.Addition;
-            if (sender == minusButton)
-                selectedOperator = SelectedOperator.Subtraction;
-
         }
         /// <summary>
         /// calculates the result of the operation
@@ -114,6 +92,16 @@ namespace Calculator
             {
                 resultLabel.Content = "0";
             }
+
+            if (sender == multipleButton)
+                selectedOperator = SelectedOperator.Multiplication;
+            if (sender == divButton)
+                selectedOperator = SelectedOperator.Division;
+            if (sender == plusButton)
+                selectedOperator = SelectedOperator.Addition;
+            if (sender == minusButton)
+                selectedOperator = SelectedOperator.Subtraction;
+
         }
         /// <summary>
         /// makes the number a floating point number

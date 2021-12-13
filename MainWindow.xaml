@@ -104,6 +104,7 @@
             Content="-"
             Grid.Row="3"
             Grid.Column="3"
+            Click="OperationButton_Click"
             />
         <Button x:Name="sevenButton"
             Margin="5"
